@@ -1,0 +1,6 @@
+java程序对数据预处理，python（依赖tensorflow）程序完成embedding计算
+DeepPre.java对数据文件(两个文件一个包含所有边一个包含单向边,合起来可以代表整个网络)进行预处理得到csv文件
+csv2tf_neg处理csv文件得到tensorflow的tf文件
+deep_negtive是主程序，输入为tf文件，输出为包含每条边的embedding的log文件
+
+程序可读性和易用性都不佳，见谅
