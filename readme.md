@@ -14,7 +14,7 @@ To run edge2vec, open the terminal and input
 ```bash
 python3 edge2vec.py -i INPUT -m MODEL -n NUM -s SAMPLE
 ```
-, where the parameters is explained as follows:
+, where the parameters are:
 ```
 -i: path to the input graph file (in "edge list" format)
 -m: the output directory of model files
@@ -28,7 +28,7 @@ For example, you can run edge2vec on `Epinions` using
 python edge2vec.py -i Epinions-55K.graph -m results -n 1000 -s 500
 ```
 
-The program will divide the input graph into two part, `MODEL/train.txt` and `MODEL/test.txt`, and their embedding results can be found in `MODEL/train.log` and `MODEL/test.log`.  You can use these to conduct downstream experiment, such as link prediction, sign prediction or tie direction prediction.
+The program will divide the input graph into two parts, `MODEL/train.txt` and `MODEL/test.txt`, and their embedding results can be found in `MODEL/train.log` and `MODEL/test.log`, respectively.  You can use these to conduct downstream experiments, such as link prediction, sign prediction or tie direction prediction.
 
-#### References
+#### Reference
 Chanping Wang, Chaokun Wang, Zheng Wang, Xiaojun Ye, and PhilipS. Yu. Edge2vec: Edge-based Social Network Embedding. ACM Transactions on Knowledge Discovery in Data (TKDD), 14(4):1-24, 2020. (Submitted June 2017; accepted March 2020)
